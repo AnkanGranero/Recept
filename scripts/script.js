@@ -20,7 +20,7 @@ const pancakeRecipe = {
         "Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek- eller pannkakspanna",
         "Servera med sylt, bär eller frukt"
     ],
-    bottomPictures: [
+    servingPictures: [
         { src: "images/servering.jpeg", alt: "Pannkakor serverade med grädde och sylt" },
         { src: "images/servering2.jpg", alt: "Pannkakor serverade med grädde och hallon" },
     ]
@@ -53,10 +53,17 @@ pancakeRecipe.instructions.forEach(step => {
 }
 );
 
-const servingPictureLeft = document.getElementById("serving-picture-left");
-servingPictureLeft.src = pancakeRecipe.bottomPictures[0].src;
-servingPictureLeft.alt = pancakeRecipe.bottomPictures[0].alt;
+const servingPictures = document.getElementById("serving-pictures");
+const pictures = servingPictures.querySelectorAll(".serving-picture")
 
-const servingPictureRight = document.getElementById("serving-picture-right");
-servingPictureRight.src = pancakeRecipe.bottomPictures[1].src;
-servingPictureRight.alt = pancakeRecipe.bottomPictures[1].alt;
+pictures.forEach( (picture, index) => {
+    const data = pancakeRecipe.servingPictures[index];
+    if(data) {
+        picture.src = data.src;
+        picture.alt = data.alt
+    }
+    else {
+        picture.scr = "";
+        picture.alt = "Kunde inte hitta serveringsbild"
+    }
+})
