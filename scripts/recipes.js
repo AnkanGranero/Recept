@@ -1,4 +1,32 @@
 const recipes = {
+
+    pancakes: {
+        heroImage: {
+            src: "images/pancakes/hero.jpg",
+            alt: "Bild på pankakor på ett dukat bord med tillbehör som sylt och bär"
+        },
+        title: "Enkelt recept på pankakor",
+        lead: "Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept",
+        ingredients: [
+            "2 1/2 dl vetemjöl",
+            "1/2 tesked salt",
+            "6 dl mjölk",
+            "3 ägg",
+            "smör till (stekning)",
+            "sylt, bär, grädde eller frukt till servering"
+        ],
+        instructions: [
+            "Blanda mjöl och salt i en bunke",
+            "Vispa i hälften av mjölken och vispa till en slät smet",
+            "Låt smeten vila i 10 min",
+            "Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek- eller pannkakspanna",
+            "Servera med sylt, bär eller frukt"
+        ],
+        servingPictures: [
+            { src: "images/pancakes/serving1.jpg", alt: "Pannkakor serverade med grädde och sylt" },
+            { src: "images/pancakes/serving2.jpg", alt: "Pannkakor serverade med grädde och hallon" },
+        ]
+    },
     carbonara: {
         heroImage: {
             src: "images/carbonara/hero.jpg",
@@ -27,33 +55,34 @@ const recipes = {
             { src: "images/carbonara/serving2.jpg", alt: "Närbild på en gaffel som snurrar in carbonara" },
         ]
     },
-    pancakes: {
+    falafelWrap: {
         heroImage: {
-            src: "images/pancakes/hero.jpg",
-            alt: "Bild på pankakor på ett dukat bord med tillbehör som sylt och bär"
+            src: "images/falafelWrap/hero.jpg",
+            alt: "Falafelwrap med sallad, hummus och picklad rödlök"
         },
-        title: "Enkelt recept på pankakor",
-        lead: "Gör traditionella tunna pannkakor med detta enkla och goda pannkaksrecept",
+        title: "Vegansk Falafelwrap",
+        lead: "Krispig falafel med krämig hummus i ett tunnbröd – perfekt som lunch eller middag.",
         ingredients: [
-            "2 1/2 dl vetemjöl",
-            "1/2 tesked salt",
-            "6 dl mjölk",
-            "3 ägg",
-            "smör till (stekning)",
-            "sylt, bär, grädde eller frukt till servering"
+            "8 falafelbollar (färdiga eller hemgjorda)",
+            "2 tortillabröd eller libabröd",
+            "Hummus",
+            "Sallad",
+            "Picklad rödlök",
+            "Tomat och gurka"
         ],
         instructions: [
-            "Blanda mjöl och salt i en bunke",
-            "Vispa i hälften av mjölken och vispa till en slät smet",
-            "Låt smeten vila i 10 min",
-            "Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek- eller pannkakspanna",
-            "Servera med sylt, bär eller frukt"
+            "Värm bröden snabbt i stekpanna eller mikro",
+            "Bred ut hummus i mitten",
+            "Fyll med sallad, tomat, gurka och falafel",
+            "Toppa med picklad rödlök",
+            "Rulla ihop till en wrap och servera"
         ],
         servingPictures: [
-            { src: "images/pancakes/serving1.jpg", alt: "Pannkakor serverade med grädde och sylt" },
-            { src: "images/pancakes/serving2.jpg", alt: "Pannkakor serverade med grädde och hallon" },
+            { src: "images/falafelWrap/serving1.jpg", alt: "Öppen wrap med falafel och färska grönsaker" },
+            { src: "images/falafelWrap/serving2.jpg", alt: "Falafelwrap delad i två på ett träfat" },
         ]
-    }
+    },
 }
+
 
 export default recipes;
