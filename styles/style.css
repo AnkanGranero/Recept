@@ -1,105 +1,100 @@
 html {
-    background: #A100004D;
-
+  background: #a100004d;
 }
 
 body {
-    width: 100%;
-    margin: 0 auto;
-    font-family: Open sans;
-    font-size: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+  font-family: Open sans;
+  font-size: 1.5rem;
 
-    @media (min-width: 786px) {
-        width: 67%;
-        margin-bottom: 4rem;
-    }
-
+  @media (min-width: 786px) {
+    width: 67%;
+    margin-bottom: 4rem;
+  }
 }
 
 #recipe-list {
-    position: fixed;
-    left: 0;
-    list-style: none;
-    display: none;
+  position: fixed;
+  left: 0;
+  list-style: none;
+  display: none;
 
-    li button {
-        font-family: Open sans;
-        font-size: 1.5rem;
-        background: lightgray;
-        padding: 1rem;
-        border-radius: 1rem;
-        cursor: pointer;
-        margin-bottom: 2rem;
-    }
+  li button {
+    font-family: Open sans;
+    font-size: 1.5rem;
+    background: lightgray;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
 
-@media (min-width: 786px) {
+  @media (min-width: 786px) {
     display: block;
-}
+  }
 }
 
 .wrapper {
-    padding: 4rem 2rem;
-    background: white;
+  padding: 4rem 2rem;
+  background: white;
 
-    @media (min-width: 786px) {
-        padding: 4rem;
-    }
+  @media (min-width: 786px) {
+    padding: 4rem;
+  }
 }
 
 #hero-image {
-    width: 100%;
-    display: block;
-    height: 500px;
-    object-fit: cover;
+  width: 100%;
+  display: block;
+  height: 500px;
+  object-fit: cover;
 }
 
 #recipe-title {
-    color: #A10000;
-    font-size: 2.5rem;
-    margin-top: 0;
-    margin-bottom: 2rem;
-
+  color: #a10000;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 #recipe-lead {
-    padding: 1.5rem;
-    background: #EBEBEB;
-    ;
+  padding: 1.5rem;
+  background: #ebebeb;
 }
 
 h2 {
-    font-size: 2rem;
-    margin: 2rem 0;
+  font-size: 2rem;
+  margin: 2rem 0;
 }
 
 #serving-pictures {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+
+  .serving-picture {
+    object-fit: cover;
+    height: 467px;
 
     @media (min-width: 1024px) {
-        flex-direction: row;
+      width: 50%;
+
+      :last-of-type {
+        margin-left: 1.5rem;
+      }
     }
+  }
 
-    .serving-picture {
-        object-fit: cover;
-        height: 467px;
+  .serving-picture:last-of-type {
+    margin-top: 1.5rem;
 
-        @media (min-width: 1024px) {
-            width: 50%;
-
-            :last-of-type {
-                margin-left: 1.5rem;
-            }
-        }
-
+    @media (min-width: 1024px) {
+      margin-left: 1.5rem;
+      margin-top: 0;
     }
-
-    .serving-picture:last-of-type {
-        margin-top: 1.5rem;
-
-        @media (min-width: 1024px) {
-            margin-left: 1.5rem;
-            margin-top: 0;
-        }
-    }
+  }
 }
