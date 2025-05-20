@@ -1,7 +1,5 @@
 import recipes from "./recipes.js"
 
-const pancakeRecipe = recipes.pancakes
-
 /* 
     - lägg till funktion getImagesToRecipe 
 */
