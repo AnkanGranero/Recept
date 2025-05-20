@@ -1,4 +1,4 @@
-import recipes from "./recipes.js"
+
 
 /* 
     - lägg till funktion getImagesToRecipe 
