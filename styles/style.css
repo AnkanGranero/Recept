@@ -19,6 +19,8 @@ body {
   left: 0;
   list-style: none;
   display: none;
+  padding: 0;
+  max-width: 16%;
 
   li button {
     font-family: Open sans;
@@ -29,9 +31,11 @@ body {
     cursor: pointer;
     margin-bottom: 2rem;
   }
-
   @media (min-width: 786px) {
     display: block;
+  }
+  @media (min-width: 2400px) {
+    padding-left: 1rem;
   }
 }
 
