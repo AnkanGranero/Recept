@@ -12,22 +12,22 @@ function renderRecipe(recipe) {
     const lead = document.getElementById("recipe-lead");
     lead.textContent = recipe.lead;
 
-    const ingredientsUl = document.getElementById("ingredients");
-    ingredientsUl.innerHTML = "";
+    const ingredientsUL = document.getElementById("ingredients");
+    ingredientsUL.innerHTML = "";
 
     recipe.ingredients.forEach(ingredient => {
         const li = document.createElement("li");
         li.textContent = ingredient;
-        ingredientsUl.appendChild(li)
+        ingredientsUL.appendChild(li)
     });
 
-    const instructionsOl = document.getElementById("instructions");
-    instructionsOl.innerHTML = "";
+    const instructionsOL = document.getElementById("instructions");
+    instructionsOL.innerHTML = "";
 
     recipe.instructions.forEach(step => {
         const ol = document.createElement("li");
         ol.textContent = step;
-        instructionsOl.appendChild(ol);
+        instructionsOL.appendChild(ol);
     }
     );
 
