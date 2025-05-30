@@ -1,9 +1,5 @@
 import recipes from "./recipes.js"
 
-/* 
-    - lägg till funktion getImagesToRecipe 
-*/
-
 function renderRecipe(recipe) {
 
     const heroImage = document.getElementById("hero-image");
